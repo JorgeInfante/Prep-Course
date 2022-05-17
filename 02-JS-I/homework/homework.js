@@ -4,19 +4,19 @@
 const nuevaString = 'hola';
 
 // Crea una variable numérica, puede ser cualquier número:
-const nuevoNum = null;
+const nuevoNum = 6;
 
 // Crea una variable booleana:
-const nuevoBool = null;
+const nuevoBool = true;
 
 // Resuelve el siguiente problema matemático:
-const nuevaResta = 10 - null === 5;
+const nuevaResta = 10 - 5 === 5;
 
 // Resuelve el siguiente problema matemático:
-const nuevaMultiplicacion = 10 * null === 40 ;
+const nuevaMultiplicacion = 10 * 4 === 40 ;
 
 // Resuelve el siguiente problema matemático:
-const nuevoModulo = 21 % 5 === null;
+const nuevoModulo = 21 % 5 === 1;
 
 
 // En los próximos 22 problemas, deberás completar la función.
@@ -28,100 +28,140 @@ const nuevoModulo = 21 % 5 === null;
 function devolverString(str) {
   // "Return" la string provista: str
   // Tu código:
-  
+  return ("Saludos!");
 }
+console.log(devolverString());
 
 function suma(x, y) {
   // "x" e "y" son números
   // Suma "x" e "y" juntos y devuelve el valor
   // Tu código:
-  
+ return(x+y)
 }
+console.log(suma(4,6));
 
 function resta(x, y) {
   // Resta "y" de "x" y devuelve el valor
   // Tu código:
-  
+  return(x-y)
 }
+console.log(resta(4,2));
 
 function multiplica(x, y) {
   // Multiplica "x" por "y" y devuelve el valor
   // Tu código:
-  
+  return(x*y)
 }
+console.log(multiplica(4,2));
 
 function divide(x, y) {
   // Divide "x" entre "y" y devuelve el valor
   // Tu código:
-  
+  return(x/y)
 }
+console.log(divide(16,2));
 
 function sonIguales(x, y) {
   // Devuelve "true" si "x" e "y" son iguales
   // De lo contrario, devuelve "false"
   // Tu código:
-  
+  if (x==y){
+    console.log("true")
+  }else{
+    console.log("false")
+  }
 }
+sonIguales(3,3);
 
 function tienenMismaLongitud(str1, str2) {
   // Devuelve "true" si las dos strings tienen la misma longitud
   // De lo contrario, devuelve "false"
   // Tu código:
-  
+  if (str1.length == str2.length){
+    console.log("true");
+  }else{
+    console.log("false");
+  }
 }
+tienenMismaLongitud("hola", "adios");
 
 function menosQueNoventa(num) {
   // Devuelve "true" si el argumento de la función "num" es menor que noventa
   // De lo contrario, devuelve "false"
   // Tu código:
-  
+  if (num < 90){
+    console.log("true")
+  }else{
+    console.log("false")
+  }
 }
+menosQueNoventa(100);
 
 function mayorQueCincuenta(num) {
   // Devuelve "true" si el argumento de la función "num" es mayor que cincuenta
   // De lo contrario, devuelve "false"
   // Tu código:
-  
+  if(num > 50){
+    console.log("true")
+  }else{
+    console.log("false")
+  }
 }
+mayorQueCincuenta(51);
 
 function obtenerResto(x, y) {
   // Obten el resto de la división de "x" entre "y"
   // Tu código:
-  
+  return (x%y)
 }
+console.log(obtenerResto(21,5));
 
 function esPar(num) {
   // Devuelve "true" si "num" es par
   // De lo contrario, devuelve "false"
   // Tu código:
-  
+  if(num%2 == 0){
+    console.log("true")
+  }else{
+    console.log("false")
+  }
 }
+esPar(5);
 
 function esImpar(num) {
   // Devuelve "true" si "num" es impar
   // De lo contrario, devuelve "false"
   // Tu código:
-  
+  if(num%2 != 0){
+    console.log("true")
+  }else{
+    console.log("false")
+  }
 }
+esImpar(5)
 
 function elevarAlCuadrado(num) {
   // Devuelve el valor de "num" elevado al cuadrado
   // ojo: No es raiz cuadrada!
   // Tu código:
-  
+  return Math.pow(num,2)
 }
+console.log(elevarAlCuadrado(10));
+
 
 function elevarAlCubo(num) {
   // Devuelve el valor de "num" elevado al cubo
   // Tu código:
-  
+  return Math.pow(num,3)
 }
+console.log(elevarAlCubo(2))
 
 function elevar(num, exponent) {
   // Devuelve el valor de "num" elevado al exponente dado en "exponent"
   // Tu código:
-  
+  return Math.pow(num,exponent)
 }
+console.log(elevar(5,2));
 
 function redondearNumero(num) {
   // Redondea "num" al entero más próximo y devuélvelo
